@@ -1,0 +1,49 @@
+{
+    "reimu": {
+        "name": "Reimu Hakurei",
+        "shortname": "Reimu",
+        "ability": "",
+        "types": ["Divine"]
+    },
+    "youmu": {
+        "name": "Youmu Konpaku",
+        "shortname": "Youmu",
+        "ability": "+50% attack when cursed. Attack not reduced by burn.",
+        "details": ["If the curse is dispelled, Youmu loses the attack bonus."],
+        "types": ["Spirit", "Steel"]
+    },
+    "marisa": {
+        "name": "Marisa Kirisame",
+        "shortname": "Marisa",
+        "ability": "Whenever Marisa attacks, she steals the enemy's item.",
+        "details": ["This ability works only if Marisa has no item.", "Marisa keeps the item after it is stolen.", "This ability is not optional."],
+        "types": ["Air", "Fire"]
+    },
+    "reisen": {
+        "name": "Reisen Udongein Inaba",
+        "shortname": "Reisen",
+        "ability": "The enemy cannot use the same spellcard twice consecutively.",
+        "details": ["This applies only if Reisen was on the battlefield when both spellcards were cast; if Reisen switches in on the turn the enemy casts a spellcard for the second time, the spellcard will not miss."],
+        "types": ["Shadow", "Steel"]
+    },
+    "yuyuko": {
+        "name": "Yuyuko Saigyouji",
+        "shortname": "Yuyuko",
+        "ability": "When Yuyuko is defeated, the enemy loses 20 HP.",
+        "types": ["Spirit"]
+    },
+    "kogasa": {
+        "name": "Kogasa Tatara",
+        "shortname": "Kogasa",
+        "types": ["Water"],
+        "ability": "Kogasa gets +50% defence if the enemy has at least 50 attack, and +50% magic defence if the enemy has at least 50 magic attack."
+    },
+    "mokou": {
+        "name": "Fujiwara no Mokou",
+        "shortname": "Mokou",
+        "types": ["Fire"],
+        "ability": "Mokou cannot be killed by a single attack; instead she survives with 10 HP.",
+        "details": ["If Mokou would defeated by the first enemy attack to hit her, she instead loses all but 10 HP.", "This ability works even if Mokou has previously been damaged by non-attack sources such as curses or traps."]
+    }
+}
+

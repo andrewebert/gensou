@@ -1,0 +1,83 @@
+{
+    "mokou": {
+        "position": 1,
+        "spellcards": [0, 0, 0, 0],
+        "hp": 30,
+        "stats": {
+            "attack": {"total": 12},
+            "defence": {"total": 34},
+            "magic_attack": {"total": 52},
+            "magic_defence": {"total": 19},
+            "speed": {"total": 19}
+        },
+        "item": 1
+    },
+    "reimu":
+    {
+        "position": 2,
+        "spellcards": [5,2,7,8],
+        "hp": 2,
+        "item": 2,
+        "stats": {
+            "attack": {"total": 50},
+            "defence": {"total": 20},
+            "magic_attack": {"total": 34},
+            "magic_defence": {"total": 52},
+            "speed": {"total": 52}
+        }
+    },
+    "marisa":
+    {
+        "position": 3,
+        "spellcards": [9, 4, 11, 12],
+        "hp": 100,
+        "item": 3,
+        "stats": {
+            "attack": {"total": 13},
+            "defence": {"total": 62},
+            "magic_attack": {"total": 42},
+            "magic_defence": {"total": 32},
+            "speed": {"total": 32}
+        }
+    },
+    "reisen":
+    {
+        "position": 4,
+        "spellcards": [11, 8, 5, 2],
+        "hp": 50,
+        "item": 4,
+        "stats": {
+            "attack": {"total": 45},
+            "defence": {"total": 12},
+            "magic_attack": {"total": 30},
+            "magic_defence": {"total": 23},
+            "speed": {"total": 23}
+        }
+    },
+    "yuyuko":
+    {
+        "position": 5,
+        "spellcards": [4, 1, 10, 7],
+        "hp": 99,
+        "stats": {
+            "attack": {"total": 45},
+            "defence": {"total": 12},
+            "magic_attack": {"total": 30},
+            "magic_defence": {"total": 23},
+            "speed": {"total": 23}
+        }
+    },
+    "kogasa":
+    {
+        "position": 6,
+        "spellcards": [9, 12, 3, 6],
+        "hp": 1,
+        "stats": {
+            "attack": {"total": 34},
+            "defence": {"total": 12},
+            "magic_attack": {"total": 46},
+            "magic_defence": {"total": 29},
+            "speed": {"total": 29}
+        }
+    }
+}

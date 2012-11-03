@@ -1,0 +1,27 @@
+Starting a game:
+
+Client: Display loading screen
+Client -> Server: open socket
+Server -> Client: Acknowledge
+Client -> Server: Send login name
+Server -> Client: Send to game
+Server -> Interface: addPlayer(socket, id)
+Interface -> GameInterface: addPlayer(socket, id)
+GameInterface: players << socket
+GameInterface: player_objects << Player.new(socket, id)
+Player: data = database.lookup(id)
+Player -> GameInterface: send data to socket
+Client: Load player's data
+Client: Display player's data
+
+if this is the second player:
+    GameInterface: send to each player "start game"
+    GameInterface: game = Game.new(player_objects)
+    Game -> GameInterface: request_player_action(players, start_game)
+    Client->Server: (socket, action [starting hero])
+    Server->Interface: (socket, action)
+    Interface: game_interfaces[socket].send(socket, action)
+
+    Once both players have responded:
+        GameInterface -> Game: start_game(actions)
+

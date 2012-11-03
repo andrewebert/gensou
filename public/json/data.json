@@ -1,0 +1,26 @@
+{
+    "type": "data",
+
+    "enemy_stacks": {
+                "unknown_2":
+        {
+            "position": 2
+        },
+        "unknown_3":
+        {
+            "position": 3
+        },
+        "unknown_4":
+        {
+            "position": 4
+        },
+        "unknown_5":
+        {
+            "position": 5
+        },
+        "unknown_6":
+        {
+            "position": 6
+        }
+    },
+}

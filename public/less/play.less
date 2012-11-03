@@ -1,0 +1,829 @@
+/******************************************************************************\ 
+|*                            GENERAL STUFF                                    |
+\******************************************************************************/
+
+// This is a comment
+@background-color: #FDF6EF;
+@title_font_size: 22px;
+@data_font_size: 18px;
+
+body {
+    background-color: @background-color;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+#loading {
+    font-size: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+    margin-top: 20%;
+}
+*/
+
+#container {
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 940px;
+    display: table;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+@physical_color: #501c1c;
+@magic_color: #2b1f50;
+@special_color: #1d4019;
+@normal_color: #333333;
+
+.physical {
+    color: @physical_color;
+    background-color: @physical_color;
+}
+.magic { 
+    color: @magic_color;
+    background-color: @magic_color;
+}
+.special { 
+    color: @special_color;
+    background-color: @special_color;
+}
+.normal { 
+    color: @normal_color;
+    background-color: @normal_color;
+}
+
+/******************************************************************************\ 
+|*                            LAYOUT                                           |
+\******************************************************************************/
+
+@game_width: 620px;
+#game {
+    width: @game_width;
+    float: left;
+}
+
+/******************************************************************************\ 
+|*                                  GAME                                       |
+\******************************************************************************/
+
+@game_zone_height: 350px;
+@log_height: 96px;
+
+#game_zone {
+    position: relative;
+    height: @game_zone_height;
+    width: 100%;
+    border-style: solid;
+    background-color: #feefcb;
+}
+
+@image_width: 160px;
+@hp_zone_offset: @image_width + 50px;
+@hp_bar_width: 324px;
+
+.game_area {
+    position: absolute;
+    display: none;
+    .hero {
+        position: absolute;
+    }
+    .hp_zone {
+        position: absolute;
+    }
+
+    .hp_bar_zone {
+        position: relative;
+        width: @hp_bar_width + 4px;
+    }
+
+    .hp_zone {
+        bottom: 34px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        .name {
+            font-size: @title_font_size;
+            text-align: left;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .type_zone {
+            position: absolute;
+            width: 70px;
+            height: 30px;
+            top: 8px;
+            right: 0px;
+            img {
+                float: right;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .hp_bar {
+            position:absolute;
+            width: @hp_bar_width;
+            height: 20px;
+            border-radius: 25px;
+            border-style: solid;
+            border-width: 3px;
+        }
+        span.hp {
+            position:absolute;
+            top: 0px;
+            display: block;
+            overflow: hidden;
+            height: 20px;
+            background-color: #f1a165;
+            background-image: -webkit-gradient(linear, left top, left bottom,
+              color-stop(0, #f1a165),color-stop(1, #f36d0a));
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-color: transparent;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: transparent;
+        }
+
+        span.hp.full {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        span.hp.low {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        span.hp.one_hp{
+            height: 16px;
+            top: 2px;
+        }
+        .effect_zone {
+            position: relative;
+            float: right;
+            top: 30px;
+            right: 10px;
+        }
+        p.hp {
+            margin-top: 0px;
+            text-align: right;
+            font-size: 16px;
+        }
+    }
+}
+
+.my.game_area {
+    bottom: 0px;
+
+    .hp_zone {
+        left: @hp_zone_offset;
+        bottom: 40px;
+    }
+    .hero {
+        left: 0px;
+        bottom: 0px;
+    }
+    span.hp {
+      width: 0.70 * @hp_bar_width;
+    }
+}
+
+.enemy.game_area {
+    right: 0px;
+    
+    .hero {
+        right: 0px;
+        top: 0px;
+    }
+    .hp_zone {
+        right: @hp_zone_offset;
+        top: 34px;
+    }
+    .hp_bar_zone {
+        float:right;
+    }
+    .hp_bar {
+        right: 0px;
+    }
+    span.hp {
+        left: 0px;
+        width: 0.30 * @hp_bar_width;
+    }
+}
+
+
+/******************************************************************************\ 
+|*                                   LOG                                       |
+\******************************************************************************/
+
+#log {
+    background-color: white;
+    position: relative;
+    top: -3px;
+    width: 100%;
+    height: @log_height;
+    border-style: solid;
+    overflow: auto;
+    line-height: 24px;
+    font-size: 14px;
+
+    .message {
+        margin-left: 5px;
+    }
+
+    #up_arrow, #down_arrow {
+        position: absolute;
+        right: 30px;
+    }
+
+    #up_arrow {
+        top: 20%;
+    }
+    
+    #down_arrow {
+        bottom: 20%;
+    }
+}
+
+/******************************************************************************\ 
+|*                                   CHAT                                      |
+\******************************************************************************/
+
+@chat_height: @game_zone_height + @log_height + 2px;
+@chat_width: 294px;
+
+#chat {
+    background-color: white;
+    position: relative;
+    height: @chat_height;
+    width: @chat_width;
+    border-style: solid;
+    left: @game_width + 20px;
+
+    form {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+
+        input {
+            position: absolute;
+            bottom: 0px;
+            width: 90%;
+            left: 4%;
+        }
+    }
+}
+
+#inbox {
+    position: absolute;
+    overflow: auto;
+    bottom: 50px;
+    height: @chat_height - 50px;
+    width: @chat_width - 15px;
+    left: 15px;
+}
+
+
+/******************************************************************************\ 
+|*                            SELECTION                                        |
+\******************************************************************************/
+
+#hero_container {
+    height: 64px;
+    width: 384px;
+}
+
+.hero_icon {
+    float:left;
+}
+
+@inactive: #EDEDED;
+@active: #EEEEDF;
+@selected: #DADA88;
+
+button {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+
+    background-color: @inactive;
+}
+
+button.active {
+    border-style: groove;
+    border-color: red;
+}
+
+@selection_width: 420px;
+#selection {
+    width: @selection_width;
+    float: left;
+
+    button.spellcard {
+        position: relative;
+        width: 364px;
+        text-align: left;
+
+        p {
+            margin-left: 5px;
+        }
+        .sign {
+            margin-top: 4px;
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+        .name {
+            background-color: transparent;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        .type {
+          position: absolute;
+          right: 11px;
+          top: 11px;
+          width: 34px;
+          height: 34px;
+        }
+    }
+    /*
+    .critical .name {
+        font-weight: bold;
+    }
+    */
+}
+
+.hero_icon {
+    position: relative;
+    top: -4px;
+}
+
+.hero_icon.active {
+    top: 6px;
+}
+
+/******************************************************************************\ 
+|*                                 DETAILS                                     |
+\******************************************************************************/
+
+@details_width: 520px;
+@help_buffer: 51px;
+
+#details {
+    position: relative;
+    margin-top: 0px;
+    width: @details_width;
+    left: @selection_width;
+    
+    .effect, .stat_effect {
+        position: relative;
+
+        p {
+            font-size: 16px;
+        }
+
+        .help_button, .stat_unhelp {
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+
+        .text {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border-style: solid;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+
+        .detail {
+            margin-top: 0px;
+        }
+    }
+}
+
+/******************************************************************************\ 
+|*                                 HERO DATA                                   |
+\******************************************************************************/
+
+#hero_bar {
+    top: 0px;
+    width: @details_width;
+
+    .hero {
+        left: 0px;
+        top: 0px;
+    }
+    .hp_zone {
+        left: @image_width;
+        top: 24px;
+
+        .name {
+            text-align: left;
+        }
+        .hp_bar_zone,.hp_text {
+            float:left;
+        }
+        .type_zone, p.hp {
+            position: absolute;
+            right: 0px;
+        }
+    }
+    .expand, .unexpand {
+        position: absolute;
+        right: 30px;
+        top: 140px;
+    }
+}
+
+#hero_data, #item_data {
+    position: absolute;
+    top: 180px;
+}
+
+@effect_left: 190px;
+#hero_data {
+    .effect {
+        top: 0px;
+
+        .text {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+    }
+    .stat_effect {
+        left: @effect_left;
+    }
+    .stats {
+        width: 180px;
+        font-size: @data_font_size;
+        position: absolute;
+        text-indent: 2px;
+
+        .stat {
+            width: 30px;
+        }
+
+        .stat_changed {
+            font-weight: bold;
+            /* Clickable */
+            cursor: pointer;
+        }
+
+        .buffed {
+            color: green;
+        }
+
+        .nerfed {
+            color: red;
+        }
+    }
+}
+
+.help_not_shown, .no_help {
+    #hero_data .effect, .stat_effect {
+        left: @effect_left;
+        width: @details_width - @effect_left;
+        @text_width: @details_width - @effect_left - @help_buffer;
+        .text, .detail {
+            width: @text_width;
+        }
+
+        hr {
+            width: @text_width - 5px;
+        }
+    }
+}
+
+.help_shown #hero_data .effect {
+    left: 0;
+    width: @details_width;
+    @text_width: @details_width - @help_buffer;
+    .text, .detail {
+        width: @text_width;
+    }
+
+    hr {
+        width: @text_width - 5px;
+    }
+}
+
+
+/******************************************************************************\ 
+|*                            ITEM DATA                                        |
+\******************************************************************************/
+
+#item_data {
+    width: @details_width;
+    .name {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .effect {
+        @text_width: @details_width - @help_buffer;
+
+        .text, .detail {
+            width: @text_width;
+        }
+
+        hr {
+            width: @text_width - 5px;
+        }
+    }
+}
+
+/******************************************************************************\ 
+|*                            SPELLCARD DATA                                   |
+\******************************************************************************/
+
+@power_circle_size: 36px;
+
+#spellcard_data {
+    float: left;
+    position: absolute;
+    top: 56px;
+    width: 100%;
+    .name {
+        position: relative;
+        font-size: 24px;
+        margin-top: 12px;
+    }
+    .dummy {
+        display: inline-block;
+    }
+    .typestring {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 22px;
+    }
+    .power, .type {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .power {
+        border-radius: @power_circle_size;
+        border-style: solid;
+        border-width: 3px;
+        width: @power_circle_size;
+        height: @power_circle_size;
+
+        p {
+            margin-top: 8px;
+            font-size: 22px;
+            text-align: center;
+            color: @background-color;
+        }
+    }
+
+    .type {
+        width: 42px;
+        height: 42px;
+    }
+
+    .effect {
+        @text_width: @details_width - @help_buffer;
+
+        .text, .detail {
+            width: @text_width;
+        }
+
+        hr {
+            width: @text_width - 5px;
+        }
+    }
+}
+
+/******************************************************************************\ 
+|*                                 CONFIRM                                     |
+\******************************************************************************/
+
+#confirm {
+    background-color: @active;
+    position: absolute;
+    left: 150px;
+    top: 240px;
+    width: 220px;
+    height: 90px;
+    /* Clickable */
+    cursor: pointer;
+
+    .text {
+        margin-top: 17px;
+        margin-bottom: 2px;
+        font-size: 22px;
+    }
+
+    .cancel {
+        font-size: 12px;
+        font-color: blue;
+        display: none;
+    }
+}
+
+#confirm.active {
+    background-color: @selected;
+    /* Not clickable */
+    cursor: default;
+
+    .cancel {
+        display: inline;
+    }
+}
+
+
+/******************************************************************************\ 
+|*                            TYPECHART                                        |
+\******************************************************************************/
+
+@border_highlight_color: red;
+@box-size: 25px;
+
+#typechart {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+
+    table {
+        border-collapse: collapse;
+
+        td {
+            height: @box-size;
+            width: @box-size;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        img {
+            height: @box-size - 2;
+            width: @box-size - 2;
+            margin-left: 1px;
+            margin-top: 1px;
+            /* Clickable */
+            cursor: pointer;
+        }
+    }
+
+    .pre_highlighted_row, .highlighted_row {
+        border-bottom-width: 4px;
+    }
+
+    .pre_highlighted_col, .highlighted_col {
+        border-right-width: 4px;
+    }
+
+    .highlighted_row, .highlighted_col {
+        background-color: #ffffa0; 
+    }
+    .crit   { background-color: #00c00c; }
+    .resist { background-color: #ff9d00; }
+    .immune { background-color: black; }
+
+    .unhelp {
+        position: absolute;
+        top: 5px;
+        left: 332px;
+    }
+
+    .explanation {
+        position: absolute;
+        left: 330px;
+        top: 50px;
+        width: 200px;
+
+        .section {
+            margin-top: 30px;
+
+            .box {
+                float: left;
+                height: @box-size;
+                width: @box-size;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+            p {
+                position: relative;
+                left: 3px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+/******************************************************************************\ 
+|*                                DISPLAY STATE                                |
+\******************************************************************************/
+
+// ============ Details state ============ 
+.hero_details {
+    #spellcard_data { display: none; }
+    #typechart {display: none; }
+}
+
+.spellcard_details {
+    #hero_zone { display: none; }
+    #typechart {display: none; }
+}
+.spellcard_details.inactive_hero {
+    #confirm { display: none; }
+}
+
+.typechart_details {
+    #hero_zone { display: none; }
+    #spellcard_data { display: none; }
+    #confirm { display: none; }
+}
+
+// ============ Expand state ============ 
+.not_expanded, .expanded_item {
+    #hero_data { display: none; }
+    .unexpand { display: none; }
+}
+
+.not_expanded, .expanded_hero {
+    #item_data .effect { display: none; }
+}
+
+.expanded_hero, .expanded_item {
+    #confirm { display: none; }
+}
+
+.expanded_hero {
+    .expand { display: none; }
+    #item_data {display: none; }
+}
+
+// ============ Help state ============ 
+.no_help, .help_not_shown {
+    .effect .detail { display: none; }
+    .effect hr { display: none; }
+}
+
+.no_help {
+    .help_button { display: none; }
+}
+
+.help_not_shown {
+    .help_button.unhelp { display: none; }
+}
+
+.help_shown {
+    .help_button.help { display: none; }
+    #confirm { display: none; }
+    .stats { display: none; }
+}
+
+// ============ Which help state ============ 
+.stat_help_not_shown {
+    .stat_effect { display: none; }
+}
+
+.stat_help_shown {
+    .effect { display: none; }
+}
+
+// ============ Team state ============ 
+.enemy_team {
+    #confirm { display: none; }
+}
+
+// ============ Hero active state, confirm state ============ 
+.active_hero.hero_details.not_confirmed {
+    #confirm { display: none; }
+}
+
+.active_hero #selection button {
+    background-color: @active;
+}
+
+.active_hero #selection button.active {
+    background-color: @selected;
+}
+
+
+.hidden, .hidden * {
+    display: none;
+}
+

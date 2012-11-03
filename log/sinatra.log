@@ -1,0 +1,168 @@
+127.0.0.1 - - [10/Oct/2012 21:50:04] "GET /less/play.less HTTP/1.1" 200 17019 0.0127
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET / HTTP/1.1" 200 8605 0.0276
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/front/mokou.png HTTP/1.1" 304 - 0.0008
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Fire.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/back/youmu.png HTTP/1.1" 304 - 0.0105
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Steel.svg HTTP/1.1" 304 - 0.0008
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Spirit.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/jquery.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/data.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/util.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/play_helper.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/play.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /js/less.js HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/util/down_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/util/up_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/util/x.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /less/play.less HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Air.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Divine.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Earth.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Fighting.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Ice.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Shadow.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/types/Water.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/youmu.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/reimu.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/marisa.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/reisen.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/yuyuko.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/icon/kogasa.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [10/Oct/2012 21:50:09] "GET /img/front/youmu.png HTTP/1.1" 304 - 0.0009
+127.0.0.1 - - [10/Oct/2012 22:04:07] "GET /less/play.less HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [10/Oct/2012 22:19:28] "GET /less/play.less HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [10/Oct/2012 22:36:22] "GET /less/play.less HTTP/1.1" 304 - 0.0200
+127.0.0.1 - - [10/Oct/2012 22:54:57] "GET /less/play.less HTTP/1.1" 304 - 0.0016
+127.0.0.1 - - [10/Oct/2012 23:15:23] "GET /less/play.less HTTP/1.1" 304 - 0.0014
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET / HTTP/1.1" 200 8605 0.0221
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /js/data.js HTTP/1.1" 304 - 0.0019
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /js/util.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /js/play_helper.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /js/play.js HTTP/1.1" 304 - 0.0078
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /img/util/down_arrow_medium.png HTTP/1.1" 304 - 0.0026
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /img/util/up_arrow_medium.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:10:25] "GET /less/play.less HTTP/1.1" 304 - 0.0007
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET / HTTP/1.1" 200 8605 0.0308
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/data.js HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/util.js HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/play_helper.js HTTP/1.1" 304 - 0.0096
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/play.js HTTP/1.1" 304 - 0.0007
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /js/less.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/front/mokou.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Fire.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/back/youmu.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Steel.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Spirit.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/util/down_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/util/up_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/util/x.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Air.svg HTTP/1.1" 304 - 0.0008
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Divine.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Earth.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Fighting.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Ice.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Shadow.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/types/Water.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/youmu.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/reimu.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/marisa.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/reisen.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/yuyuko.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/icon/kogasa.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:13:47] "GET /img/front/youmu.png HTTP/1.1" 304 - 0.0005
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET / HTTP/1.1" 200 8605 0.0213
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/data.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/util.js HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/play_helper.js HTTP/1.1" 304 - 0.0094
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/play.js HTTP/1.1" 304 - 0.0007
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /js/less.js HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/front/mokou.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Fire.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/back/youmu.png HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Steel.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Spirit.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/util/down_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/util/up_arrow_medium.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/util/x.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /less/play.less HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Air.svg HTTP/1.1" 304 - 0.0006
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Divine.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Earth.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Fighting.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Ice.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Shadow.svg HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/types/Water.svg HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/youmu.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/reimu.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/marisa.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/reisen.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/yuyuko.png HTTP/1.1" 304 - 0.0004
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/icon/kogasa.png HTTP/1.1" 304 - 0.0005
+127.0.0.1 - - [11/Oct/2012 08:15:05] "GET /img/front/youmu.png HTTP/1.1" 304 - 0.0005
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+127.0.0.1 - - [11/Oct/2012 08:15:17] "GET / HTTP/1.1" 404 434 0.0095
+127.0.0.1 - - [11/Oct/2012 08:15:17] "GET /__sinatra__/404.png HTTP/1.1" 200 23305 0.0092
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET / HTTP/1.1" 200 8382 0.0323
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /js/util.js HTTP/1.1" 200 1044 0.0031
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /js/play_helper.js HTTP/1.1" 200 67 0.0132
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /js/play.js HTTP/1.1" 200 22914 0.0031
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /js/less.js HTTP/1.1" 200 47054 0.0036
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/util/down_arrow_medium.png HTTP/1.1" 200 240 0.0113
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/util/up_arrow_medium.png HTTP/1.1" 200 238 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /less/play.less HTTP/1.1" 200 14712 0.0064
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /get_data HTTP/1.1" 200 11234 0.0034
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/unknown.png HTTP/1.1" 200 387 0.0115
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/reimu.png HTTP/1.1" 200 4645 0.0030
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/front/reisen.png HTTP/1.1" 200 4545 0.0028
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/front/reimu.png HTTP/1.1" 200 5016 0.0108
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/front/marisa.png HTTP/1.1" 200 5010 0.0030
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/marisa.png HTTP/1.1" 200 4536 0.0028
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/reisen.png HTTP/1.1" 200 4394 0.0115
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/front/yuyuko.png HTTP/1.1" 200 4845 0.0031
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/yuyuko.png HTTP/1.1" 200 4428 0.0028
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/front/kogasa.png HTTP/1.1" 200 4781 0.0027
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/kogasa.png HTTP/1.1" 200 4781 0.0111
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/back/mokou.png HTTP/1.1" 200 4788 0.0028
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/youmu.png HTTP/1.1" 200 3116 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/reimu.png HTTP/1.1" 200 3082 0.0105
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/marisa.png HTTP/1.1" 200 3069 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/mokou.png HTTP/1.1" 200 3079 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/reisen.png HTTP/1.1" 200 2930 0.0106
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/yuyuko.png HTTP/1.1" 200 3093 0.0029
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/icon/kogasa.png HTTP/1.1" 200 3085 0.0027
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Earth.svg HTTP/1.1" 200 9395 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Fighting.svg HTTP/1.1" 200 9235 0.0107
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Fire.svg HTTP/1.1" 200 5390 0.0025
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Ice.svg HTTP/1.1" 200 5912 0.0025
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Shadow.svg HTTP/1.1" 200 9419 0.0140
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Divine.svg HTTP/1.1" 200 9362 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Spirit.svg HTTP/1.1" 200 10047 0.0027
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Steel.svg HTTP/1.1" 200 9084 0.0107
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Water.svg HTTP/1.1" 200 5988 0.0026
+127.0.0.1 - - [13/Oct/2012 18:18:57] "GET /img/types/Air.svg HTTP/1.1" 200 5812 0.0026
+>> Thin web server (v1.5.0 codename Knife)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Stopping ...
+>> Stopping ...

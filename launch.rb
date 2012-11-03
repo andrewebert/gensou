@@ -1,0 +1,3 @@
+require 'gensou'
+
+Gensou.run!

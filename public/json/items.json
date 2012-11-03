@@ -1,0 +1,21 @@
+{
+    "1": {
+        "name": "Divine Raiment of the Dragon Fish",
+        "effect": "+8 attack, +8 magic attack.",
+        "details": ["The attack and magic attack bonuses apply before percentage bonuses: if #{hero} has a +100% attack bonus, she will receive a total of +16 attack from #{this}."]
+    },
+    "2": {
+        "name": "Dragon Emblem",
+        "effect": "Raises #{hero}'s attack by 50% for one attack.",
+        "details": ["After one attack, Dragon Emblem is destroyed."]
+    },
+    "3": {
+        "name": "Hakurouken",
+        "effect": "#{hero} gets +50% attack, but may use only one spellcard",
+        "details": ["#{hero} may switch out instead of using a spellcard. If #{hero} switches out and later switches back in, she may use a different spellcard.", "If #{hero} loses #{this}, she may use a different spellcard."]
+    },
+    "4": {
+        "name": "Dubious Mushroom",
+        "effect": "At the end of the turn, #{hero} is afflicted with Curse of Poison."
+    }
+}

@@ -1,0 +1,3 @@
+cd www
+put -r /home/andrew/Dropbox/touhoumon/deploy/web/*
+exit

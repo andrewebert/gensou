@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in `ls icon*.png`; do
+    convert -crop 64x64 $file c_$file
+done
+rm *-1.png

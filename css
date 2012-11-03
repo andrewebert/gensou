@@ -1,0 +1,205 @@
+/******************************************************************************\ 
+|*                            GENERAL STUFF                                    |
+\******************************************************************************/
+.hidden, .hidden * {
+  display: none;
+}
+body {
+  background-color: #FDF6E3;
+}
+.chunk {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  float: left;
+  width: 100%;
+}
+.main .chunk {
+  height: 400px;
+}
+.controls .chunk {
+  height: 400px;
+}
+.chat {
+  background-color: purple;
+}
+/******************************************************************************\ 
+|*                                  GAME                                       |
+\******************************************************************************/
+.game {
+  position: relative;
+  border-style: solid;
+}
+.my.game_area {
+  position: absolute;
+  bottom: 0px;
+}
+.my.game_area .hero,
+.my.game_area .hp_zone,
+.my.game_area .hp_bar_zone,
+.my.game_area .hp_text {
+  float: left;
+}
+.my.game_area .hp_zone {
+  margin-top: 56px;
+}
+.my.game_area .name {
+  text-align: left;
+}
+.my.game_area .hp_text {
+  left: 318px;
+}
+.my.game_area .hp {
+  width: 200px;
+}
+.enemy.game_area {
+  position: absolute;
+  right: 0px;
+}
+.enemy.game_area .hero,
+.enemy.game_area .hp_zone,
+.enemy.game_area .hp_bar_zone,
+.enemy.game_area .hp_text {
+  float: right;
+}
+.enemy.game_area .name {
+  text-align: right;
+}
+.enemy.game_area .hp_text {
+  right: 314px;
+}
+.enemy.game_area .hp_zone {
+  margin-top: 40px;
+}
+.enemy.game_area .hp_bar {
+  right: 0px;
+}
+.enemy.game_area .hp {
+  left: 0px;
+  width: 100px;
+}
+.hp_bar_zone {
+  position: relative;
+  width: 308px;
+}
+.hp_zone {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.name {
+  font-size: 22px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.hp_text {
+  position: relative;
+  top: 1px;
+}
+.hp_bar {
+  position: absolute;
+  width: 304px;
+  height: 20px;
+  border-radius: 25px;
+  border-style: solid;
+}
+span.hp {
+  top: 2.5px;
+  left: 2px;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  height: 21px;
+  background-color: #f1a165;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f1a165), color-stop(1, #f36d0a));
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: -1;
+}
+/******************************************************************************\ 
+|*                            SELECTION & DETALS                               |
+\******************************************************************************/
+.selection {
+  width: 420px;
+}
+.details {
+  position: relative;
+  margin-top: 32px;
+  width: 520px;
+  float: left;
+}
+.hero_container {
+  height: 64px;
+  width: 384px;
+}
+.hero_data {
+  margin-top: 180px;
+}
+.types {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.stats, .ability {
+  font-size: 18px;
+}
+.details .game_area {
+  position: absolute;
+  top: 0px;
+}
+.details .game_area .hero,
+.details .game_area .hp_zone,
+.details .game_area .hp_bar_zone,
+.details .game_area .hp_text {
+  float: left;
+}
+.details .game_area .hp_zone {
+  margin-top: 52px;
+}
+.details .game_area .name {
+  text-align: left;
+  font-size: 28px;
+}
+.details .game_area .hp_text {
+  left: 318px;
+}
+.details .game_area .hp {
+  width: 200px;
+}
+.hero_icon {
+  float: left;
+}
+.button {
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  border-radius: 10px;
+  width: 364px;
+}
+.selection .button {
+  border-style: solid;
+  border-width: 2px;
+  background-color: #DADADA;
+}
+.selection.active .button {
+  background-color: #EEEEDF;
+}
+.selection.active .button.active {
+  border-style: groove;
+  border-color: red;
+  background-color: #DADA88;
+}
+.button p {
+  margin-left: 5px;
+}
+.button .sign {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+.button .name {
+  margin-top: 5px;
+  font-size: 18px;
+}

@@ -1,0 +1,96 @@
+{
+    "1": {
+        "sign": "Magic Sign",
+        "name": "Stardust Reverie",
+        "type": "Air",
+        "power": 20,
+        "atype": "magic",
+        "effect": ""
+    },
+    "2": {
+        "sign": "Divine Sign",
+        "name": "Light of Amaterasu",
+        "type": "Divine",
+        "power": "20",
+        "atype": "magic",
+        "effect": ""
+    },
+    "3": {
+        "sign": "Divine Spear",
+        "name": "Spear the Gugnir",
+        "type": "Divine",
+        "power": "18",
+        "atype": "physical",
+        "effect": "#{this} has 30 power if #{hero} is cursed."
+    },
+    "4": {
+        "sign": "Land Sign",
+        "name": "Three Sacred Treasures",
+        "type": "Earth",
+        "effect": "#{hero} gets +50% defence, +50% magic defence and +50% speed until she leaves the battlefield."
+    },
+    "5": {
+        "sign": "Attack Sign",
+        "name": "Roc-Killing Fist",
+        "type": "Fighting",
+        "power": "26",
+        "atype": "physical",
+        "effect": "#{hero} takes 40 damage if Roc-Killing Fist misses.",
+        "details": ["#{this} misses if the enemy is immune to it, or uses a skill such as Block.", "#{this} does not miss if #{hero} is stunned or otherwise prevented from using the ability."]
+    },
+    "6": {
+        "sign": "Mystery Sign",
+        "name": "Youkai Orb of Unknown Mechanics",
+        "type": "Spirit",
+        "effect": "Lose 10 HP and summon a Hourai Doll. Hourai Doll gives #{hero} +100% to all stats. Hourai Doll is removed at end of turn if #{hero} takes damage from an attack.",
+        "details": ["#{hero} can only have one Hourai Doll at a time.", "Hourai Doll is removed immediately if #{hero} switches out."]
+    },
+    "7": {
+        "sign": "Blaze Sign",
+        "name": "Hell's Artificial Sun",
+        "type": "Fire",
+        "power": "10",
+        "atype": "magic",
+        "effect": "A heatwave begins, lasting for 5 turns. Fire attacks get +50% power and water attacks get -50% power.",
+        "details": ["Other weather effects such as rain and fog are removed.", "When the heatwave ends, fire and water attacks go back to their normal power."]
+    },
+    "8": {
+        "sign": "Secret Barrage",
+        "name": "And Then There Were None",
+        "type": "Fire",
+        "power": "100",
+        "atype": "physical",
+        "effect": "#{hero} is defeated."
+    },
+    "9": {
+        "sign": "Cold Sign",
+        "name": "Cold Snap",
+        "type": "Ice",
+        "power": "18",
+        "atype": "magic",
+        "effect": "If there is a blizzard, the enemy gets -50% speed until they leave the battlefield."
+    },
+    "10": {
+        "sign": "Border Sign",
+        "name": "Boundary of Form and Emptiness",
+        "type": "Shadow",
+        "atype": "special",
+        "effect": "#{hero} gets +50% magic attack and +50% magic defence until she leaves the battlefield."
+    },
+    "11": {
+        "sign": "Metal Sign",
+        "name": "Silver Dragon",
+        "type": "Steel",
+        "power": "20",
+        "atype": "magic",
+        "effect": ""
+    },
+    "12": {
+        "sign": "Water Sign",
+        "name": "Illusionary Waterfall",
+        "type": "Water",
+        "power": "18",
+        "atype": "magic",
+        "effect": "Illusionary Waterfall always deals at least 25 damage."
+    }
+}

@@ -1,0 +1,194 @@
+!!!
+%html{:lang => "en"}
+  %head
+    / This will be removed in production
+    %link{:rel => "stylesheet/less", :href => "less/play.less", :type => "text/css"}
+    / This will be included in production
+    ///%link{:rel => "stylesheet", :href => "css/play.css", :type => "text/css"}
+  %body
+    %title Gensou
+    #loading
+      %h1{:style => "margin: auto; margin-top: 20%; display: table;"} Loading... 0%
+    #container.hero_info.no_help.my_team.not_confirmed.not_expanded.stat_help_not_shown{:style => "display:none;"}
+      / The main game interface
+      #main
+        / ========================= GAME ========================= 
+        #game
+          #game_zone
+
+            .enemy.game_area
+              %img.hero.clickable
+              .hp_zone
+                %p.name
+                .type_zone
+                  %img.type.2.clickable
+                  %img.type.1.clickable
+                .hp_bar_zone
+                  %span.hp
+                  .hp_bar
+                .effect_zone
+                  %p.hp
+
+            .my.game_area
+              %img.hero.clickable
+              .hp_zone
+                %p.name
+                .type_zone
+                  %img.type.2.clickable
+                  %img.type.1.clickable
+                .hp_bar_zone
+                  %span.hp
+                  .hp_bar
+                .effect_zone
+                  %p.hp
+
+          #log
+
+        #chat
+          #inbox
+          %form
+            %input#chatbox
+
+      / ========================= SELECTION ========================= 
+      #selection.active
+        #hero_container
+          %img.hero_icon.1.active.clickable
+          %img.hero_icon.2.clickable
+          %img.hero_icon.3.clickable
+          %img.hero_icon.4.clickable
+          %img.hero_icon.5.clickable
+          %img.hero_icon.6.clickable
+
+        %button#0.spellcard.clickable
+          %p.sign
+          %p.name
+          / %img.type
+        %button#1.spellcard.clickable
+          %p.sign
+          %p.name
+          / %img.type
+        %button#2.spellcard.clickable
+          %p.sign
+          %p.name
+          / %img.type
+        %button#3.spellcard.clickable
+          %p.sign
+          %p.name
+          / %img.type
+
+
+      / ========================= DETAILS ========================= 
+      #details
+
+        #hero_zone
+          / ========================= HERO BAR ========================= 
+          #hero_bar.game_area
+            %img.hero.clickable
+            .hp_zone
+              %p.name
+              .type_zone
+                %img.type.2.clickable
+                %img.type.1.clickable
+              .hp_bar_zone
+                %span.hp
+                .hp_bar
+              .effect_zone
+                %p.hp 70/100
+            %img.expand.clickable{:src => "img/util/down_arrow_medium.png"}
+            %img.unexpand.clickable{:src => "img/util/up_arrow_medium.png"}
+
+
+          / ========================= HERO DATA ========================= 
+          #hero_data
+            %table.stats{:border => 1, :cellpadding => 3}
+              %tr
+                %td.stat_label Attack
+                %td.stat.attack
+              %tr
+                %td.stat_label Defence
+                %td.stat.defence
+              %tr
+                %td.stat_label Magic Attack
+                %td.stat.magic_attack
+              %tr
+                %td.stat_label Magic Defence
+                %td.stat.magic_defence
+              %tr
+                %td.stat_label Speed
+                %td.stat.speed
+
+            / Hero ability
+            .effect
+              / %img.help.help_button.clickable{:src => "img/util/help.png"}
+              %img.unhelp.help_button.clickable{:src => "img/util/x.png"}
+              %p.text
+              %hr
+
+            .stat_effect
+              %img.stat_unhelp.clickable{:src => "img/util/x.png"}
+
+          / ========================= ITEM ========================= 
+          #item_data
+            %p.name.clickable
+            .effect
+              / %img.help.help_button.clickable{:src => "img/util/help.png"}
+              %img.unhelp.help_button.clickable{:src => "img/util/x.png"}
+              %p.text
+              %hr
+
+        / ========================= SPELLCARD ========================= 
+        #spellcard_data
+          .power
+            %p
+              %b
+          %img.type.clickable
+          .dummy
+            %p.name
+          %p.typestring
+          .effect
+            / %img.help.help_button.clickable{:src => "img/util/help.png"}
+            %img.unhelp.help_button.clickable{:src => "img/util/x.png"}
+            %p.text
+            %hr
+
+        / ========================= CONFIRM ========================= 
+        #confirm_zone
+          %button#confirm
+            %p.text
+            %p.cancel.clickable
+              %u cancel
+            
+      / ========================= TYPECHART ========================= 
+      #typechart
+        %table
+          %tr.defender
+            %td
+
+        %img.unhelp.clickable{:src => "img/util/x.png"}
+
+        .explanation
+          .section
+            .crit.box
+            %p Critical (double damage)
+          .section
+            .resist.box
+            %p Resisted (half damage)
+          .section
+            .immune.box
+            %p Immune (no damage)
+          
+
+
+  / This will be removed in production
+  %script{:src => "js/jquery.js", :type => "text/javascript"}
+  / This will be included in production
+  ///%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", :type => "text/javascript"}
+
+  / %script{:src => "js/data.js", :type => "text/javascript"}
+  %script{:src => "js/util.js", :type => "text/javascript"}
+  %script{:src => "js/play_helper.js", :type => "text/javascript"}
+  %script{:src => "js/play.js", :type => "text/javascript"}
+
+  %script{:type => "text/javascript"}
+  / This will be removed in production
+  %script{:src => "js/less.js", :type => "text/javascript"} less.env = "development"; less.watch();
